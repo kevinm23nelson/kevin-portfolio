@@ -1,16 +1,18 @@
 import React from 'react';
 import "./Header.css";
+import Navbar from "../Navbar/Navbar"
 
 
 function Header() {
     return (
-        <div className="header" id="header">
-            {/* navbar */}
+        <div className="header flex flex-col" id="header">
+            <Navbar />
+
             <div className="container flex">
                 <div className="header-content">
                     <h2
                         className="text-uppercase text-white op-07 fw-6 ls-2">
-                        Placeholder, placeholder, placeholder.
+                        Javascript, HTML, CSS, React, Redux, Typescript
                     </h2>
                     <h1
                         className="header-title text-white fw-6">Hello, I'm Kevin <span
