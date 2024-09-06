@@ -134,7 +134,7 @@ a{
   background-color: var(--brown-color);
 }
 .bg-dark{
-  background-color: var(--dark-color);
+  background-color: #4d4d54;
 }
 
 /* letter spacing */

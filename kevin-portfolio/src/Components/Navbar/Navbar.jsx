@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 
 function Navbar() {
 const [toggleNav, settoggleNav] = useState(false);
+const collapseNavbar = () => settoggleNav(false);
 
     return (
         <div className="navbar">
@@ -15,14 +16,16 @@ const [toggleNav, settoggleNav] = useState(false);
                         <Link to="/" className="navbar-work text-uppercase fw-7 text-white ls-2 fs-22">Test</Link>
                         <button
                             type="button"
-                            className="navbar-open-btn text-white">
+                            className="navbar-open-btn text-white"
+                            onClick={() => settoggleNav(!toggleNav)}>
                                 <FaBars size = {30}/>
                         </button>
 
-                        <div className="navbar-collapse">
+                        <div className={toggleNav ? "navbar-collapse show-navbar-collapse " : "navbar-collapse"}>
                             <button 
                             type = "button"
-                            className="navbar-close-btn text-white">
+                            className="navbar-close-btn text-white"
+                            onClick={collapseNavbar}>
                                 <FaTimes size = {30}/>
                             </button>
                             <ul className="navbar-nav">
