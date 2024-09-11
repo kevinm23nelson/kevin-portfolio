@@ -1,5 +1,5 @@
 .header{
-    min-height: 100vh;
+    min-height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../Assets/Images/background-img.jpg") center/cover no-repeat;
     justify-content: stretch;
 }
@@ -13,6 +13,11 @@
     line-height: 1.4;
     margin-top: 1.8rem;
     max-width: 600px;
+}
+.header-image{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header .btn-groups{
     margin-top: 4.8rem;
@@ -35,6 +40,12 @@
     .header .btn-groups .btn-item{
         font-size: 2.2rem;
         padding: 1.4rem 3.4rem;
+    }
+    .header-image {
+        position: static; /* Reset position for normal flow */
+        max-width: 400px; /* Adjust size if needed */
+        margin-left: 0; /* Reset margins */
+        margin-right: 2rem; /* Adjust space from the container */
     }
 }
 

@@ -35,38 +35,10 @@ const AboutMe = () => {
                     <div className='about-grid grid'>
                         <img src={images.Kevin} alt="" className='about-img mx-auto' />
                         <div className='section-title'>
-                            <h3 className='text-brown' >I'm <span className='text-dark'>Kevin</span></h3> {/* Add ref here */}
-                            <p className='text mx-auto' ref={headingRef}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam culpa distinctio mollitia consectetur dolore! Iusto dolores reprehenderit at ad! Molestiae.</p>
-                        </div>
-                    </div>
+                            <h3 className='text-brown' >I'm <span className='text-dark'>Kevin Nelson</span></h3> {/* Add ref here */}
+                            <p className='text mx-auto'>As a software engineer with a specialization in legal technology, I bring a unique blend of technical expertise and legal acumen to the table. With a Juris Doctorate and a background in both general business and software development, I am uniquely positioned to excel in roles that bridge the gap between technology and the legal industry.</p>
 
-                    <div className='about-grid grid'>
-                        {about_stats.map((about_stat, index) => (
-                            <div className='about-item text-center flex' key={index}>
-                                <div className='about-item-icon'>
-                                    <img src={about_stat.image} alt="" />
-                                </div>
-                                <div className='about-item-text text-left'>
-                                    <h3 className='fs-24 ls-2'>{about_stat.value}</h3>
-                                    <p className='text'>{about_stat.title}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className='about-grid grid'>
-                        <div className='section-title'>
-                            <h3 className='text-brown'>Video <span className='text-dark'>Presentation</span></h3>
-                            <p className='text mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestias maxime tenetur, temporibus aspernatur, omnis expedita saepe sapiente adipisci laboriosam necessitatibus ullam eveniet asperiores nostrum.</p>
-                        </div>
-
-                        <div className='about-video'>
-                            <video className='about-video' autoPlay loop ref={vidRef}>
-                                <source src={video} type="video/mp4" />
-                            </video>
-                            <button type="button" className='vidPlayBtn flex flex-c' onClick={playVideo}>
-                                <FaPlay className='text-brown' size={28} />
-                            </button>
+                            <p className='text mx-auto' ref={headingRef}>My experience as a Legal Operations Specialist has provided me with invaluable insights into the user experience within law firms, equipping me with a deep understanding of the needs and challenges faced by legal professionals. This experience, combined with my technical knowledge, allows me to effectively design and implement solutions that enhance efficiency and drive innovation in legal technology.</p>
                         </div>
                     </div>
                 </div>

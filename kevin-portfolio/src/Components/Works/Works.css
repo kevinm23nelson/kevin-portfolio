@@ -1,3 +1,6 @@
+.work {
+    background-color: antiquewhite;
+}
 .work-list{
     row-gap: 3rem;
 }
@@ -30,6 +33,12 @@
     z-index: 10;
     opacity: 0;
     transition: var(--transition)
+}
+.work-item-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
 }
 .work-item:hover .work-item-icon{
     top: 50%;

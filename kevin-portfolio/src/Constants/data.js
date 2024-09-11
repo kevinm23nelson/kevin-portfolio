@@ -35,14 +35,17 @@ const services = [
 
 const works = [
     {
+        title: "Utah ABA Locator",
         image: `${images.utah_aba_locatorPic}`,
         gif: `${images.utah_aba_locator}`
     },
     {
+        title: "TaskPro",
         image: `${images.taskProPic}`,
         gif: `${images.taskPro}`
     },
     {
+        title: "CryptoPal",
         image: `${images.cryptoPalPic}`,
         gif: `${images.cryptoPal}`
     },

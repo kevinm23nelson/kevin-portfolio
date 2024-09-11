@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import "./MessageMe.css";
 
 const MessageMe = () => {
@@ -7,6 +8,14 @@ const MessageMe = () => {
         email: "",
         message: ""
     });
+    const messageRef = useRef(null);
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === '/message-me' && messageRef.current) {
+            messageRef.current.scrollIntoView({ behavior: 'smooth', block: 'center'})
+        }
+    })
 
     const handleChange = (e) => {
         setFormData((prevData) => ({
@@ -26,7 +35,7 @@ const MessageMe = () => {
             <div className='message-me-section'>
                 <div className='section-title'>
                     <h3 className='text-brown'>contact <span className='text-dark'>me</span></h3>
-                    <p className='text'>I offer the right solutions for your digital business.</p>
+                    <p className='text' ref={messageRef}>I deliver innovative software solutions that blend legal expertise with cutting-edge technology.</p>
                 </div>
             </div>
 

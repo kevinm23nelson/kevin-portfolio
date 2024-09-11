@@ -9,7 +9,6 @@ function WorkProcess (){
         <div className='workprocess-content'>
             <div className='section-title'>
                 <h3 className='text-brown'>working <span className='text-dark'>process</span></h3>
-                <p className='text'>Placeholder text.</p>
             </div>
 
             <div className='workprocess-list grid'>
