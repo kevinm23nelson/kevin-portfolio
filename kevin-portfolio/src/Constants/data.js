@@ -51,19 +51,23 @@ const works = [
 const work_process = [
     {
         title: "Wireframing/Sketch",
-        paragraph: "Nunc sodales lacus nec felis suscipit dictum"
+        paragraph: "Experience with wireframing and mapping out common user flows.",
+        image: `${images.cryptoPalWire}`
     },
     {
         title: "Project Preperation",
-        paragraph: "Nunc sodales lacus nec felis suscipit dictum"
+        paragraph: "GitHub Projects work flow and assignment of issues.",
+        image: `${images.cryptoPalProject}`
     },
     {
         title: "Develop",
-        paragraph: "Nunc sodales lacus nec felis suscipit dictum"
+        paragraph: "Individual branches for new features or styling.",
+        image: `${images.cryptoPalBranches}`
     },
     {
         title: "End-Product",
-        paragraph: "Nunc sodales lacus nec felis suscipit dictum"
+        paragraph: "Developed with user accessibility in mind, ensuring to cover many users.",
+        image: `${images.cryptoPalEnd}`
     },
 ];
 

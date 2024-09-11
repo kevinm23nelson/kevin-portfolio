@@ -1,12 +1,23 @@
 .workprocess-list{
     row-gap: 3rem;
     padding-top: 4rem;
+    justify-content: center;
 }
 .workprocess-item{
     text-align: left;
     padding: 2.8rem;
     box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    background-color: antiquewhite;
     transition: var(--transition);
+    justify-content: center;
+}
+.workprocess-content {
+    padding-bottom: 10rem;
+}
+.workprocess-image {
+    height: auto;
+    width: 100%; 
+    max-width: 50rem; 
 }
 .workprocess-item:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -21,13 +32,38 @@
 
 @media screen and (min-width: 678px){
     .workprocess-list{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         column-gap: 3rem;
+    }
+    .workprocess-image {
+        height: 35rem; 
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 800px){
     .workprocess-list{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .workprocess-image {
+        height: 35rem;
+        width: 100%;
     }
 }
+
+
+@media screen and (min-width: 1500px) {
+    .workprocess-item{
+        height: 38rem;
+        width: 35rem;
+        padding: 2.2rem;
+    }
+    .workprocess-list {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .workprocess-image {
+        height: 20rem;
+        width: 100%; 
+    }
+}
+

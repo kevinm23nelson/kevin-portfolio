@@ -19,6 +19,9 @@
     width: 90%;
     height: 90%;
 }
+.work-content{
+    padding-bottom: 10rem;
+}
 .work-item-icon{
     position: absolute;
     top: 0;

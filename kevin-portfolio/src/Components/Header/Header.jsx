@@ -15,7 +15,7 @@ function Header() {
                         Javascript, HTML, CSS, React, Redux, Typescript
                     </h2>
                     <h1
-                        className="header-title text-white fw-6">Hello, I'm Kevin <span
+                        className="header-title text-white fw-6">Kevin Nelson <span
                         className="text-brown">Front-End Software Engineer</span> Fort Lauderdale, Florida
                     </h1>
                     <div className="btn-groups flex">
@@ -37,3 +37,4 @@ function Header() {
 }
 
 export default Header
+
