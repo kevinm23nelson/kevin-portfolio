@@ -13,13 +13,13 @@ function Navbar() {
   const getPageTitle = () => {
     switch (location.pathname) {
       case '/':
-        return 'Home Page';
+        return '';
       case '/projects':
-        return 'Projects Page';
+        return 'Projects';
       case '/about-me':
-        return 'About Me Page';
+        return 'About Me';
       case '/message-me':
-        return 'Message Me Page';
+        return 'Contact';
       default:
         return 'Test';
     }
@@ -67,7 +67,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <Link to="/message-me" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22" onClick={collapseNavbar}>
-                    Message Me
+                    Contact Me
                   </Link>
                 </li>
               </ul>

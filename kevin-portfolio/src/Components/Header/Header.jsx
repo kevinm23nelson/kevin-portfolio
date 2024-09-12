@@ -17,13 +17,16 @@ function Header() {
                         Kevin Nelson <span className="text-brown"> Software Engineer</span> Fort Lauderdale, Florida
                     </h1>
                     <div className="btn-groups flex">
-                        {/* Wrap the button with Link */}
-                        <Link to="/projects" className="btn-item bg-brown fw-4 ls-2">
-                            See Projects
-                        </Link>
+                        {/* Update this Link to an anchor tag */}
+                        <a href="https://docs.google.com/document/d/1W1QLLoQn85Pjdk5CDyWI4f_UFPQYnennlAEc2ULyswQ/edit?usp=sharing" 
+                           className="btn-item bg-brown fw-4 ls-2" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            See Resume
+                        </a>
                         
                         <Link to="/message-me" className="btn-item bg-dark fw-4 ls-2">
-                            Message Me
+                            Contact Me
                         </Link>
                     </div>
                 </div>
