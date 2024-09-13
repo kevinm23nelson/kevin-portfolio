@@ -1,59 +1,107 @@
-import React, {useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import "./MessageMe.css";
+import emailjs from 'emailjs-com';  
+import './MessageMe.css';
 
 const MessageMe = () => {
     const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: ""
+        name: '',
+        email: '',
+        message: ''
     });
+    const [isSent, setIsSent] = useState(false); // Add a flag to check if the message is sent
     const messageRef = useRef(null);
     const location = useLocation();
 
     useEffect(() => {
         if (location.pathname === '/message-me' && messageRef.current) {
-            messageRef.current.scrollIntoView({ behavior: 'smooth', block: 'center'})
+            messageRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-    })
+    }, [location.pathname]);
 
     const handleChange = (e) => {
         setFormData((prevData) => ({
             ...prevData,
-            [e.target.id] : e.target.value
-        }))
-    }
+            [e.target.id]: e.target.value
+        }));
+    };
 
-    const handleSubmit = async(e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
-    }
 
-  return (
-    <div className='message-me section-p'>
-        <div className='container'>
-            <div className='message-me-section'>
-                <div className='section-title'>
-                    <h3 className='text-brown'>contact <span className='text-dark'>me</span></h3>
-                    <p className='text' ref={messageRef}>I deliver innovative software solutions that blend legal expertise with cutting-edge technology.</p>
+        // Send the form data using EmailJS
+        emailjs
+            .send(
+                'service_bfkunb3',  // Replace with your EmailJS service ID
+                'template_ircbiyi',  // Replace with your EmailJS template ID
+                formData,
+                '-5u-3qwKUdpYEyLPM'       // Replace with your EmailJS user ID
+            )
+            .then(
+                (result) => {
+                    console.log('Email successfully sent!', result.text);
+                    setIsSent(true); // Set the flag to true if sent successfully
+                    setFormData({ name: '', email: '', message: '' }); // Clear form
+                },
+                (error) => {
+                    console.error('There was an error sending the email:', error.text);
+                }
+            );
+    };
+
+    return (
+        <div className='message-me section-p'>
+            <div className='container'>
+                <div className='message-me-section'>
+                    <div className='section-title'>
+                        <h3 className='text-brown'>
+                            contact <span className='text-dark'>me</span>
+                        </h3>
+                        <p className='text' ref={messageRef}>
+                            I deliver innovative software solutions that blend legal expertise with cutting-edge technology.
+                        </p>
+                    </div>
                 </div>
+
+                <form className='message-me-form mx-auto' onSubmit={handleSubmit}>
+                    <div className='form-elem'>
+                        <input
+                            type='text'
+                            value={formData.name}
+                            className='form-control'
+                            placeholder='Name'
+                            onChange={handleChange}
+                            id='name'
+                        />
+                    </div>
+                    <div className='form-elem'>
+                        <input
+                            type='email' // Make sure email field is of type 'email'
+                            value={formData.email}
+                            className='form-control'
+                            placeholder='Email'
+                            onChange={handleChange}
+                            id='email'
+                        />
+                    </div>
+                    <div className='form-elem'>
+                        <textarea
+                            rows='2'
+                            value={formData.message}
+                            className='form-control'
+                            placeholder='Message'
+                            onChange={handleChange}
+                            id='message'
+                        ></textarea>
+                    </div>
+                    <button type='submit' className='bg-brown text-white submit-btn fw-3 fs-22'>
+                        Submit
+                    </button>
+                    {isSent && <p className='success-message'>Your message has been sent!</p>} {/* Show success message */}
+                </form>
             </div>
-
-            <form className='message-me-form mx-auto' onSubmit={handleSubmit}>
-                <div className='form-elem'>
-                    <input type = "text" value = {formData.name} className = "form-control" placeholder='Name' onChange={handleChange} id = "name" />
-                </div>
-                <div className='form-elem'>
-                    <input type = "text" value = {formData.email} className = "form-control" placeholder='Email' onChange={handleChange} id = "email" />
-                </div>
-                <div className='form-elem'>
-                    <textarea rows = "2" value = {formData.message} className = "form-control" placeholder='Message' onChange={handleChange} id = "message"></textarea>
-                </div>
-                <button type = "submit" className='bg-brown text-white submit-btn fw-3 fs-22'>Submit</button>
-            </form>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default MessageMe
+export default MessageMe;

@@ -9,7 +9,6 @@ function Navbar() {
   
   const collapseNavbar = () => setToggleNav(false);
 
-  // Function to get the text based on the current route
   const getPageTitle = () => {
     switch (location.pathname) {
       case '/':
@@ -17,7 +16,7 @@ function Navbar() {
       case '/projects':
         return 'Projects';
       case '/about-me':
-        return 'About Me';
+        return 'About';
       case '/message-me':
         return 'Contact';
       default:
@@ -30,7 +29,7 @@ function Navbar() {
       <div className="container">
         <div className="navbar-content">
           <div className="work-and-toggler flex flex-sb">
-            <Link to="/" className="navbar-work text-uppercase fw-7 text-white ls-2 fs-22">
+            <Link to="/" className="navbar-work text-uppercase fw-8 text-white ls-2 fs-28">
               {getPageTitle()}
             </Link>
             <button
