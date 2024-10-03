@@ -10,6 +10,9 @@
   --navy-color: #3a3a53;
   --transition: all 300ms ease-in-out;
 }
+.App {
+  background-color: rgba(168, 179, 180, 0.88);
+}
 
 *{
   padding: 0;
@@ -76,6 +79,10 @@ a{
   font-weight: 300;
   opacity: 0.9;
   font-size: 1.6rem;
+}
+
+.justify{
+  text-align: justify;
 }
 
 .text-center{
