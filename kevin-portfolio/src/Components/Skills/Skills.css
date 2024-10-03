@@ -22,25 +22,7 @@
     padding: 2px;
 }
 
-h1 {
-    color: #426696;
-    font-weight: 600;
-    font-size: 3rem;
-    opacity: 0.8;
-}
 
-h2,
-p {
-    color: #658ec6;
-    font-weight: 500;
-    opacity: 0.8;
-}
-
-h3 {
-    color: #426696;
-    font-weight: 600;
-    opacity: 0.8;
-}
 
 main {
     font-family: "Poppins", sans-serif;
@@ -68,8 +50,6 @@ main {
     margin: 1.5rem;
     flex-direction: column;
     width: auto;
-    justify-content: center;
-    align-items: center;
 }
 
 .card {
@@ -83,9 +63,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    .glass {
-        width: 90%;
-    }
+   
     
     .skills-container {
         margin: 1rem;

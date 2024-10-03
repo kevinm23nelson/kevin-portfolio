@@ -16,11 +16,11 @@ function Works() {
     }, [location.pathname]);
 
     return (
-        <div className='work section-p bg-grey' id="work">
+        <div className='work bg-grey section-p' id="work">
             <div className='container'>
                 <div className='work-content'>
                     <div className='section-title'>
-                        <h3 className='text-brown'>Recent <span className='text-dark'>Work</span></h3>
+                        <h3 className='text-navy'>Recent <span className='text-dark'>Work</span></h3>
                     </div>
 
                     <div className='work-list grid' ref={worksRef}>
