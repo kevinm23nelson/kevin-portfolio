@@ -9,7 +9,7 @@ const MessageMe = () => {
         email: '',
         message: ''
     });
-    const [isSent, setIsSent] = useState(false); // Add a flag to check if the message is sent
+    const [isSent, setIsSent] = useState(false);
     const messageRef = useRef(null);
     const location = useLocation();
 
@@ -29,19 +29,18 @@ const MessageMe = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Send the form data using EmailJS
         emailjs
             .send(
-                'service_bfkunb3',  // Replace with your EmailJS service ID
-                'template_ircbiyi',  // Replace with your EmailJS template ID
+                'service_bfkunb3',  
+                'template_ircbiyi',  
                 formData,
-                '-5u-3qwKUdpYEyLPM'       // Replace with your EmailJS user ID
+                '-5u-3qwKUdpYEyLPM'      
             )
             .then(
                 (result) => {
                     console.log('Email successfully sent!', result.text);
-                    setIsSent(true); // Set the flag to true if sent successfully
-                    setFormData({ name: '', email: '', message: '' }); // Clear form
+                    setIsSent(true); 
+                    setFormData({ name: '', email: '', message: '' }); 
                 },
                 (error) => {
                     console.error('There was an error sending the email:', error.text);
@@ -54,12 +53,12 @@ const MessageMe = () => {
             <div className='container'>
                 <div className='message-me-section'>
                     <div className='section-title'>
-                        <h3 className='text-brown'>
+                        <h3 className='text-navy'>
                             contact <span className='text-dark'>me</span>
                         </h3>
-                        <p className='text' ref={messageRef}>
-                            I deliver innovative software solutions that blend legal expertise with cutting-edge technology.
-                        </p>
+                        {/* <p className='text' ref={messageRef}>
+                            Get in touch with me!
+                        </p> */}
                     </div>
                 </div>
 
@@ -94,7 +93,7 @@ const MessageMe = () => {
                             id='message'
                         ></textarea>
                     </div>
-                    <button type='submit' className='bg-brown text-white submit-btn fw-3 fs-22'>
+                    <button type='submit' className='text submit-btn fw-3 fs-22'>
                         Submit
                     </button>
                     {isSent && <p className='success-message'>Your message has been sent!</p>} {/* Show success message */}

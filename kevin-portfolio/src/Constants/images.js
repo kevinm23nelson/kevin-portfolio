@@ -9,6 +9,18 @@ import cryptoPalProject from "../Assets/Images/cryptoPalProject.png"
 import cryptoPalBranches from "../Assets/Images/cryptoPalBranches.png"
 import cryptoPalEnd from "../Assets/Images/cryptoPalEnd.png"
 import Kevin from "../Assets/Images/Kevin.jpg"
+import javascript from "../Assets/Images/javascript.png"
+import css3 from "../Assets/Images/css3.png"
+import html5 from "../Assets/Images/html5.png"
+import reactlogo from "../Assets/Images/reactlogo.png"
+import typescript from "../Assets/Images/typescript.png"
+import ruby from "../Assets/Images/ruby.png"
+import rails from "../Assets/Images/rails.png"
+import node from "../Assets/Images/node.png"
+import express from "../Assets/Images/express.png"
+
+
+
 
 const images = {
     cryptoPal,
@@ -21,6 +33,15 @@ const images = {
     cryptoPalProject,
     cryptoPalBranches,
     cryptoPalEnd,
-    Kevin
+    Kevin,
+    javascript,
+    css3,
+    html5,
+    reactlogo,
+    typescript,
+    ruby,
+    rails,
+    node,
+    express
 }
 export default images;

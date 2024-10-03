@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.language-icons-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.skills-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: rgb(179, 202, 222);
+    border-radius: 1rem;
+    padding: 2px;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.glass {
+    background: white;
+    width: auto;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    
+}
+
+.skills-container {
+    margin: 1.5rem;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: linear-gradient(to left top,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.5));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 1.5rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
+@media (max-width: 768px) {
+    .glass {
+        width: 90%;
+    }
+    
+    .skills-container {
+        margin: 1rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    .skills-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* 
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+} */

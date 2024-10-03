@@ -7,14 +7,27 @@
     top: 0;
     right: 0;
     width: 100%;
-    background-color: var(--dark-color);
     height: 100%;
+    background: linear-gradient(to right bottom,
+                rgba(108, 189, 183, 0.166),
+                rgba(101, 98, 109, 0.179));
+    backdrop-filter: blur(2rem);
+    border-radius: 2rem;
     padding: 7rem 0 0 3rem;
     transform: translateX(100%);
     transition: var(--transition);
     z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+.navbar-content{
+    text-align: left;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    z-index: 1000;
+}
+
 .show-navbar-collapse{
     transform: translateX(0);
 }
@@ -22,6 +35,7 @@
     position: absolute;
     right: 2rem;
     top: 2rem;
+    z-index: 1001;
 }
 .nav-item{
     margin-bottom: 2rem;
@@ -55,11 +69,10 @@
     .navbar-collapse{
         transform: translateX(0);
         position: relative;
-        width: 100%;
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
-        margin: 0;
+        width: auto;
+        height: auto; /* Adjust height for desktop */
+        padding: 1rem 2rem; /* Adjust padding for desktop */
+        /* Keep the background and backdrop-filter */
     }
     .navbar-close-btn, .navbar-open-btn{
         display: none;
@@ -74,12 +87,10 @@
         margin-left: 3.6rem;
     }
     .nav-link{
-        font-size: 1.8rem;
-        font-weight: 500;
         transition: var(--transition);
     }
     .nav-link:hover{
-        color: var(--brown-color);
+        color: var(--navy-color);
     }
     .nav-link::after{
         display: none;
