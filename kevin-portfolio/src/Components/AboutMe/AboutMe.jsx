@@ -36,7 +36,7 @@ const AboutMe = () => {
                         <img src={images.Kevin} alt="" className='about-img mx-auto' />
                         <div className='section-title'>
                             <h3 className='text-navy' >I'm <span className='text-dark'>Kevin Nelson</span></h3> {/* Add ref here */}
-                            <p className='text mx-auto'>As a software engineer with a Juris Doctorate and Business degree and a background in both legal/business operations and software development, I am uniquely positioned to excel in roles that bridge the gap between technology and business/fiance/legal industries.</p>
+                            <p className='text mx-auto'>As a software engineer with a Juris Doctorate and Business degree and a background in both legal/business operations and software development, I am uniquely positioned to excel in roles that bridge the gap between technology and business/legal industries.</p>
                             <br/>
                             <p className='text mx-auto' ref={headingRef}>My experience as a Legal Operations Specialist and as an Operations Manager has provided me with invaluable insights into the user experience within law firms and professional retail businesses, equipping me with a deep understanding of the needs and challenges faced by professionals. This experience, combined with my technical knowledge of the Software Development Life Cycle, allows me to effectively design and implement solutions that enhance efficiency and drive innovation within any business.</p>
                         </div>
