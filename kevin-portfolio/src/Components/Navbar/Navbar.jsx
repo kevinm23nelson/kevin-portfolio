@@ -10,18 +10,18 @@ function Navbar() {
   const collapseNavbar = () => setToggleNav(false);
 
   const getPageTitle = () => {
-    switch (location.pathname) {
-      case '/':
-        return '';
-      case '/projects':
-        return 'Projects';
-      case '/about-me':
-        return 'About';
-      case '/message-me':
-        return 'Contact';
-      default:
-        return 'Test';
-    }
+    // switch (location.pathname) {
+    //   case '/':
+    //     return '';
+    //   case '/projects':
+    //     return 'Projects';
+    //   case '/about-me':
+    //     return 'About';
+    //   case '/message-me':
+    //     return 'Contact';
+    //   default:
+    //     return 'Kevin Portolio';
+    // }
   };
 
   return (
@@ -50,22 +50,27 @@ function Navbar() {
               </button>
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22" onClick={collapseNavbar}>
+                  <Link to="/" className="nav-link text-plainwhite ls-1 text-uppercase fw-6 fs-24" onClick={collapseNavbar}>
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/projects" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22" onClick={collapseNavbar}>
+                  <Link to="/skills" className="nav-link text-plainwhite ls-1 text-uppercase fw-6 fs-24" onClick={collapseNavbar}>
+                    Skills
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/projects" className="nav-link text-plainwhite ls-1 text-uppercase fw-6 fs-24" onClick={collapseNavbar}>
                     Projects
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about-me" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22" onClick={collapseNavbar}>
+                  <Link to="/about-me" className="nav-link text-plainwhite ls-1 text-uppercase fw-6 fs-24" onClick={collapseNavbar}>
                     About Me
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/message-me" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22" onClick={collapseNavbar}>
+                  <Link to="/message-me" className="nav-link text-plainwhite ls-1 text-uppercase fw-6 fs-24" onClick={collapseNavbar}>
                     Contact Me
                   </Link>
                 </li>

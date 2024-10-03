@@ -1,13 +1,13 @@
 import React from 'react';
 import "./Footer.css";
-import { FaGithub, FaSlack, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <div className='footer bg-dark section-p' id="footer">
         <div className='container'>
             <div className='section-title'>
-                <h3 className='text-brown'>Follow <span className='text-white'>Me</span></h3>
+                <h3 className='text-navy'>Follow <span className='text-white'>Me</span></h3>
             </div>
             <div className='footer-content'>
                 <ul className='footer-social-links flex flex-c'>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </a>
                     </li>
                 </ul>
-                <p className='text-center fs-14 text-white op-07 fw-3 ls-1 reserved-text'>All Rights Reserved &copy; 2024</p>
+                <p className='text-center fs-14 text-white op-07 fw-4 ls-1 reserved-text'>All Rights Reserved &copy; 2024</p>
             </div>
         </div>
     </div>
