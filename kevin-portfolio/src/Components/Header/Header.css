@@ -1,6 +1,6 @@
 .header{
     min-height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/background-img.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.197), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/background-img.jpg") center/cover no-repeat;
     justify-content: stretch;
 }
 .header > .container{
@@ -31,6 +31,8 @@
         flex-direction: column;
         align-items: center;
         padding: 24px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
 }
 .header .btn-groups{
     margin-top: 4.8rem;

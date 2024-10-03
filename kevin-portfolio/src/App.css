@@ -92,11 +92,11 @@ a{
 }
 .text-white{
   color: var(--white-color);
-  text-shadow: 
+  /* text-shadow: 
     -1px -1px 0 #424266,  
     1px -1px 0 #424266,  
     -1px 1px 0 #424266,  
-    1px 1px 0 #424266;
+    1px 1px 0 #424266; */
 }
 .text-plainwhite{
   color: #fff;
@@ -115,11 +115,11 @@ a{
 }
 .text-navy {
   color: #424266;
-  text-shadow: 
+  /* text-shadow: 
     -.5px -.5px 0 white,  
     .5px -.5px 0 white,  
     -.5px .5px 0 white,  
-    .5px .5px 0 white; 
+    .5px .5px 0 white;  */
 }
 .fw-2{font-weight: 200;}
 .fw-3{font-weight: 300;}
