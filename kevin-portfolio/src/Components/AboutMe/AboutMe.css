@@ -1,18 +1,24 @@
 .about .section-title{
     padding-top: 30px;
-    
 }
 
 .about-background{
-    background-color: white;
+    background-color: #fff;
     margin: 4.5rem;
     border-radius: 2rem;
 }
 
-.about-grid,
-.about-img,
-.about-grid .section-title .text{
+.section-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-img {
     max-width: 600px;
+    border-radius: 2rem;
+}
+.about-grid,
+.about-grid .text{
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2rem;
@@ -29,6 +35,9 @@
     border-radius: 2rem;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: auto;
+    max-height: 860px;
+    padding: 5rem;
 }
 
 .about-content {
@@ -70,7 +79,18 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 1400px) {
+ .text {
+    font-size: 18px;
+ }
+}
+@media screen and (max-width: 1200px) {
+    .text {
+       font-size: 16px;
+    }
+   }
+
+@media screen and (min-width: 1050px){
     .about-grid:nth-child(1),
     .about-grid:nth-child(2),
     .about-grid:nth-child(3){

@@ -5,6 +5,9 @@
 
 .work-item {
     position: relative;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2rem;
 }
 
 .work-item:hover::after {
@@ -14,6 +17,8 @@
 
 .work-content {
     padding-bottom: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .work-item-content {
@@ -58,7 +63,7 @@
 }
 
 .work-item-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 10px;
     color: #333;
@@ -119,14 +124,14 @@
     }
 }
 
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 1000px) {
     .work-list {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3rem;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1292px) {
     .work-list {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;

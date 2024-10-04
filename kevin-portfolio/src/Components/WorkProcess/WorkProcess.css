@@ -2,6 +2,7 @@
     row-gap: 3rem;
     padding-top: 4rem;
     justify-content: center;
+    border-radius: 2rem;
 }
 .workprocess-item{
     text-align: left;
@@ -9,6 +10,7 @@
     box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
     transition: var(--transition);
     justify-content: center;
+    border-radius: 2rem;
 }
 .workprocess-content {
     padding-bottom: 10rem;
@@ -17,6 +19,7 @@
     height: auto;
     width: 100%; 
     max-width: 50rem; 
+    border-radius: 1.5rem;
 }
 .workprocess-item:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -29,7 +32,7 @@
     margin-right: 1.6rem;
 }
 
-@media screen and (min-width: 678px){
+@media screen and (min-width: 778px){
     .workprocess-list{
         grid-template-columns: repeat(1, 1fr);
         column-gap: 3rem;
