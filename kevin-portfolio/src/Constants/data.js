@@ -39,6 +39,7 @@ const works = [
         link: "https://utahabalocator.com/",
         repo: "https://github.com/utah-aba-finder/utah-aba-finder-fe",
         image: `${images.utah_aba_locatorPic}`,
+        image2: `${images.utah_aba_locator_details}`,
         gif: `${images.utah_aba_locator}`
     },
     {

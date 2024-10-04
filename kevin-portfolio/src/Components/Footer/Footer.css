@@ -1,5 +1,7 @@
 .footer {
     margin-top: 2rem;
+    min-height: 22vh;
+
 }
 
 .footer .section-title{

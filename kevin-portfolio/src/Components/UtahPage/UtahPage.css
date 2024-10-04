@@ -1,0 +1,58 @@
+.project-details-section{
+    width: auto;
+    background: white;
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.project-details {
+    padding: 1em;
+}
+
+.utah-page-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-details-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.work-item-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .utah-page-container {
+        flex-direction: column;
+    }
+
+    .glass,
+    .project-details-section {
+        width: 100%;
+    }
+}
