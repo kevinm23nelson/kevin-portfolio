@@ -15,8 +15,8 @@ function Skills() {
 
           <div className="cards">
             <div className="card">
-              <div className="front-end-card-info">
-                <h2>Front-End</h2>
+              <div className="card-info">
+                <h2 className="skills-color">Front-End</h2>
                 <div className="language-icons-sections">
                   <img className="skills-icon" src={images.typescript} alt="" />
                   <img className="skills-icon" src={images.javascript} alt="" />
@@ -27,8 +27,8 @@ function Skills() {
               </div>
             </div>
             <div className="card">
-              <div className="back-end-card-info">
-                <h2>Back-End</h2>
+              <div className="card-info">
+                <h2 className="skills-color">Back-End</h2>
                 <div className="language-icons-sections">
                   <img className="skills-icon" src={images.ruby} alt="" />
                   <img className="skills-icon" src={images.rails} alt="" />

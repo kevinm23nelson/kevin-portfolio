@@ -27,7 +27,6 @@ function Works() {
                         {
                             works.map((work, index) => (
                                 <div className='work-item text-center' key={index}>
-                                    {/* Display title */}
                                     <h4 className='work-item-title'>{work.title}</h4>
 
                                     <div

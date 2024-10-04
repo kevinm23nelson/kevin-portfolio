@@ -17,16 +17,17 @@
     width: 80px;
     height: 80px;
     object-fit: contain;
-    background-color: rgb(179, 202, 222);
+    background-color: rgb(202, 218, 233);
     border-radius: 1rem;
     padding: 2px;
 }
 
-
+.skills-color {
+    color: white;
+}
 
 main {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,16 +35,13 @@ main {
 }
 
 .glass {
-    background: white;
     width: auto;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.3));
+    background: white;
     border-radius: 2rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
-
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .skills-container {
@@ -53,13 +51,11 @@ main {
 }
 
 .card {
-    background: linear-gradient(to left top,
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.5));
+    background: #424266;
     border-radius: 1rem;
     margin: 2rem 0rem;
     padding: 1.5rem;
-    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 @media (max-width: 768px) {

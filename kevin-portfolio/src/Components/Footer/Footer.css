@@ -1,5 +1,9 @@
+.footer {
+    margin-top: 2rem;
+}
+
 .footer .section-title{
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 .footer.section-p{
     padding: 4.5rem 0;
