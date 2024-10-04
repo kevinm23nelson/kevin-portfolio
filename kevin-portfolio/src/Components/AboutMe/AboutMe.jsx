@@ -36,7 +36,7 @@ const AboutMe = () => {
                         <div className='about-grid grid'>
                             <img src={images.Kevin} alt="" className='about-img mx-auto' />
                             <div className='section-title'>
-                                <div className="text-background"><h3 className='text-navy' >I'm <span className='text-dark'>Kevin Nelson</span></h3>
+                                <div className="text-background"><h3 className='text-navy' >Kevin <span className='text-dark'>Nelson</span></h3>
                                 
                                     <p className='text justify fw-4 mx-auto'>As a software engineer with a Juris Doctorate and Business degree and a background in both legal/business operations and software development, I am uniquely positioned to excel in roles that bridge the gap between technology and business/legal industries.</p>
                                     <br />
