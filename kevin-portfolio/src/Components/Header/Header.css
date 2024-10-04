@@ -1,6 +1,6 @@
 .header{
-    min-height: 80vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.197), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/background-img.jpg") center/cover no-repeat;
+    min-height: 90vh;
+    background: linear-gradient(rgba(187, 187, 187, 0.166), rgba(40, 49, 85, 0.406)), url("../../Assets/Images/background-img.jpg") center/cover no-repeat;
     justify-content: stretch;
 }
 .header > .container{
@@ -20,10 +20,10 @@
     margin-right: auto;
 }
 .header-content {
-        margin: 1em;
+        margin-left: 13%;
         background: linear-gradient(to right bottom,
-                rgba(108, 189, 183, 0.166),
-                rgba(101, 98, 109, 0.179));
+        rgba(40, 62, 71, 0.166),
+        rgba(160, 154, 179, 0.228));
         border-radius: 2rem;
         z-index: 2;
         backdrop-filter: blur(2rem);
@@ -57,10 +57,10 @@
         padding: 1.4rem 3.4rem;
     }
     .header-image {
-        position: static; /* Reset position for normal flow */
-        max-width: 400px; /* Adjust size if needed */
-        margin-left: 0; /* Reset margins */
-        margin-right: 2rem; /* Adjust space from the container */
+        position: static; 
+        max-width: 400px; 
+        margin-left: 0; 
+        margin-right: 2rem;
     }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './Works.css';
 import { works } from "../../Constants/data";
 import { BsPlusLg } from "react-icons/bs";
-import WorkProcess from '../WorkProcess/WorkProcess';
+// import WorkProcess from '../WorkProcess/WorkProcess';
 import { useLocation, Link } from 'react-router-dom';
 
 function Works() {
@@ -62,7 +62,7 @@ function Works() {
                     </div>
                 </div>
             </div>
-            <WorkProcess />
+            {/* <WorkProcess /> */}
         </div>
     );
 }
