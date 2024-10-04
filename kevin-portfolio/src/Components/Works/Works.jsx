@@ -1,19 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Works.css';
 import { works } from "../../Constants/data";
-import { BsPlusLg } from "react-icons/bs";
-// import WorkProcess from '../WorkProcess/WorkProcess';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Works() {
     const worksRef = React.useRef(null);
     const location = useLocation();
+    const navigate = useNavigate();
+    const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 });
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (location.pathname === '/projects' && worksRef.current) {
             worksRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     }, [location.pathname]);
+
+    const handleCardClick = (work) => {
+        if (work.title === "Utah ABA Locator") {
+            navigate('/utah');
+        } else {
+            navigate(work.link);
+        }
+    };
+
+    const handleMouseMove = (e, title) => {
+        setTooltip({
+            show: true,
+            text: `View Details for ${title}`,
+            x: e.clientX + 15,
+            y: e.clientY + 15,
+        });
+    };
+
+    const handleMouseLeave = () => {
+        setTooltip({ ...tooltip, show: false });
+    };
 
     return (
         <div className='work bg-grey section-p' id="work">
@@ -24,45 +45,44 @@ function Works() {
                     </div>
 
                     <div className='work-list grid' ref={worksRef}>
-                        {
-                            works.map((work, index) => (
-                                <div className='work-item text-center' key={index}>
-                                    <h4 className='work-item-title'>{work.title}</h4>
-
-                                    <div
-                                        to={work.link}
-                                        className='work-item-content'
-                                    >
-                                        <img className="work-item-gif" src={work.gif} alt={work.title} />
-                                      
-                                    </div>
-                                    <div className="work-item-info">
-                                        <a
-                                            href={work.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="work-item-link"
-                                            title={`View deployed site: ${work.link}`}
-                                        >
-                                            Deployed Site
-                                        </a>
-                                        <a
-                                            href={work.repo}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="work-item-repo"
-                                            title={`View repository: ${work.repo}`}
-                                        >
-                                            Repo
-                                        </a>
-                                    </div>
+                        {works.map((work, index) => (
+                            <div
+                                className='work-item text-center'
+                                key={index}
+                                onClick={() => handleCardClick(work)}
+                                onMouseMove={(e) => handleMouseMove(e, work.title)}
+                                onMouseLeave={handleMouseLeave}
+                                role="button"
+                                tabIndex={0}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter') handleCardClick(work);
+                                }}
+                            >
+                                <h4 className='work-item-title'>{work.title}</h4>
+                                <div className='work-item-content'>
+                                    <img
+                                        className="work-item-gif"
+                                        src={work.gif}
+                                        alt={work.title}
+                                        loading="lazy"
+                                    />
                                 </div>
-                            ))
-                        }
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
-            {/* <WorkProcess /> */}
+            {tooltip.show && (
+                <div
+                    className="custom-tooltip"
+                    style={{
+                        left: `${tooltip.x}px`,
+                        top: `${tooltip.y}px`,
+                    }}
+                >
+                    {tooltip.text}
+                </div>
+            )}
         </div>
     );
 }

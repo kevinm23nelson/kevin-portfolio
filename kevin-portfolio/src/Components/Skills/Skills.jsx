@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react';
 import './Skills.css'
 import images from "../../Constants/images";
+import { useLocation } from 'react-router-dom';
 
-function Skills() {
+
+const Skills = () => {
+  const headingRef = useRef(null); 
+  const location = useLocation(); 
+
+  useEffect(() => {
+    if (location.pathname === '/skills' && headingRef.current) {
+        headingRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [location]);
   return (
 
     <main>
@@ -10,13 +20,13 @@ function Skills() {
         <div className="skills-container">
 
           <div className='section-title'>
-            <h3 className='text-navy'>Skills <span className='text-dark'>  Experience</span></h3>
+            <h3 className='text-navy'>Technical <span className='text-dark'>  Skills</span></h3>
           </div>
 
           <div className="cards">
             <div className="card">
               <div className="card-info">
-                <h2 className="skills-color">Front-End</h2>
+                <h2 className="skills-color" ref={headingRef} >Front-End</h2>
                 <div className="language-icons-sections">
                   <img className="skills-icon" src={images.typescript} alt="" />
                   <img className="skills-icon" src={images.javascript} alt="" />

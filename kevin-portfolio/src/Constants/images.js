@@ -4,6 +4,7 @@ import utah_aba_locator from "../Assets/Images/utah_aba_locator.gif"
 import cryptoPalPic from "../Assets/Images/cryptoPalPic.png";
 import taskProPic from "../Assets/Images/TaskProPic.png";
 import utah_aba_locatorPic from "../Assets/Images/utah_aba_locatorPic.png"
+import utah_aba_locator_details from "../Assets/Images/utah_aba_locator_details.png"
 import cryptoPalWire from "../Assets/Images/cryptoPalWire.png"
 import cryptoPalProject from "../Assets/Images/cryptoPalProject.png"
 import cryptoPalBranches from "../Assets/Images/cryptoPalBranches.png"
@@ -18,7 +19,7 @@ import ruby from "../Assets/Images/ruby.png"
 import rails from "../Assets/Images/rails.png"
 import node from "../Assets/Images/node.png"
 import express from "../Assets/Images/express.png"
-
+import postgresql_logo from "../Assets/Images/postgresql_logo.png"
 
 
 
@@ -29,6 +30,7 @@ const images = {
     cryptoPalPic,
     taskProPic,
     utah_aba_locatorPic,
+    utah_aba_locator_details,
     cryptoPalWire,
     cryptoPalProject,
     cryptoPalBranches,
@@ -42,6 +44,7 @@ const images = {
     ruby,
     rails,
     node,
-    express
+    express,
+    postgresql_logo
 }
 export default images;

@@ -8,24 +8,30 @@ function Header() {
         <div className="header flex flex-col" id="header">
             <Navbar />
 
-            <div className="container flex">
+            <div className="container">
                 <div className="header-content">
-                    {/* <h2 className="text-uppercase text-white  fw-6 ls-2">
-                        Javascript, HTML, CSS, React, Redux, Typescript
-                    </h2> */}
-                    <h1 className="header-title text-white fw-6">
-                        Kevin Nelson <span className="text-navy"> Software Engineer</span> Fort Lauderdale, Florida
+                    <h1 className="header-title">
+                        <span className="text-white fw-6">Kevin Nelson</span>
+                        <br />
+                        <span className="text-navy">Software Engineer</span>
+                        <br />
+                        <span className="text-white fw-6">Fort Lauderdale, Florida</span>
                     </h1>
-                    <div className="btn-groups flex">
-                        {/* Update this Link to an anchor tag */}
-                        <a href="https://docs.google.com/document/d/1W1QLLoQn85Pjdk5CDyWI4f_UFPQYnennlAEc2ULyswQ/edit?usp=sharing" 
-                           className="btn-item bg-navy fw-5 ls-2" 
-                           target="_blank" 
-                           rel="noopener noreferrer">
+                    
+                    <div className="btn-groups">
+                        <a 
+                            href="https://docs.google.com/document/d/1W1QLLoQn85Pjdk5CDyWI4f_UFPQYnennlAEc2ULyswQ/edit?usp=sharing" 
+                            className="btn-item bg-navy fw-5 ls-2" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
                             See Resume
                         </a>
                         
-                        <Link to="/message-me" className="btn-item bg-dark fw-5 ls-2">
+                        <Link 
+                            to="/message-me" 
+                            className="btn-item bg-dark fw-5 ls-2"
+                        >
                             Contact Me
                         </Link>
                     </div>

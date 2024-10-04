@@ -16,11 +16,6 @@ const Footer = () => {
                             <FaGithub />
                         </a>
                     </li>
-                    {/* <li>
-                        <a href="/" className='text-white'>
-                            <FaSlack />
-                        </a>
-                    </li> */}
                     <li>
                         <a href="https://www.linkedin.com/in/kevinnelson418/" className='text-white' target="_blank" rel="noopener noreferrer">
                             <FaLinkedin />
