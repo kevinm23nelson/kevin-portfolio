@@ -101,17 +101,17 @@ function CryptoPalPage() {
                         )}
                         <div className="project-description">
                             <span className="text-navy fs-24 fw-7">CryptoPal </span>
-                            <p className="fs-18 justify">
+                            <p className="fs-18 justify" ref={worksRef}>
                                 is a web application designed to help users explore and simulate investments in the top 100 cryptocurrencies without any financial risk. It provides users with detailed information about each cryptocurrency, the ability to manage favorites, and filters to help find currencies that meet specific criteria. With CryptoPal, users can practice making mock "purchases" and track their investments in real time, offering a safe environment to learn cryptocurrency trading before committing real money. The app also allows users to reset their trades and start fresh at any time.
                             </p>
                             <br />
-                            <p className="fs-18 justify">
+                            <p className="fs-18 justify" >
                                 On the technical side, CryptoPal is built using React, React Router, JavaScript, HTML, and CSS. The Fetch API is utilized to retrieve up-to-date cryptocurrency data, and Cypress is used for testing. The app features responsive design, dynamic styling based on 24-hour change percentages, and persists favorites in local storage to ensure usability across various devices and sessions.
                             </p>
                         </div>
                     </div>
                 </section>
-                <div className="buttons-container" ref={worksRef}>
+                <div className="buttons-container">
                     <div className="top-buttons">
                         <a href={CryptoPalWork?.link} target="_blank" rel="noopener noreferrer" className="project-button">
                             View Site

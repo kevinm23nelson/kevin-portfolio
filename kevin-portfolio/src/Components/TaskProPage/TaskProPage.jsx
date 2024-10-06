@@ -109,7 +109,7 @@ function TaskProPage() {
                         )}
                         <div className="project-description">
                             <span className="text-navy fs-24 fw-7">TaskPro </span>
-                            <p className="fs-18 justify">
+                            <p className="fs-18 justify" ref={worksRef}>
                                 is a React application designed to help users efficiently manage their tasks. It allows users to add, edit, and delete tasks with varying priority levels, as well as filter them by completion status. Users can also view detailed information about each task, and the app displays advice fetched from an external API to enhance the task management experience.
                             </p>
                             <br />
@@ -119,7 +119,7 @@ function TaskProPage() {
                         </div>
                     </div>
                 </section>
-                <div className="buttons-container" ref={worksRef}>
+                <div className="buttons-container">
                     <div className="top-buttons">
                         <a href={TaskProWork?.link} target="_blank" rel="noopener noreferrer" className="project-button">
                             View Site
