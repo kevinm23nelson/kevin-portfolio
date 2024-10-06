@@ -18,6 +18,7 @@ const MessageMe = () => {
             messageRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     }, [location.pathname]);
+    
 
     const handleChange = (e) => {
         setFormData((prevData) => ({

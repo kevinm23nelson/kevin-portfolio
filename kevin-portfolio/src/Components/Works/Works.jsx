@@ -72,7 +72,7 @@ function Works() {
                                 <div className='work-item-content'>
                                     <img
                                         className="work-item-gif"
-                                        src={work.gif}
+                                        src={work.image}
                                         alt={work.title}
                                         loading="lazy"
                                     />

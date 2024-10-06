@@ -38,7 +38,7 @@ function TaskProPage() {
                             <div className='work-item-content'>
                                 <img
                                     className="work-item-gif-details-page"
-                                    src={TaskProWork.gif}
+                                    src={TaskProWork.image}
                                     alt={TaskProWork.title}
                                     loading="lazy"
                                 />
@@ -101,7 +101,7 @@ function TaskProPage() {
                             <div className="project-image">
                                 <img
                                     className="work-item-detail-image"
-                                    src={TaskProWork.image}
+                                    src={TaskProWork.gif}
                                     alt={`${TaskProWork.title} details`}
                                     loading="lazy"
                                 />

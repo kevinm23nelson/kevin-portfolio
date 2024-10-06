@@ -37,7 +37,7 @@ function UtahPage() {
                         <div className='work-item-content'>
                             <img
                                 className="work-item-gif-details-page"
-                                src={utahWork.gif}
+                                src={utahWork.image2}
                                 alt={utahWork.title}
                                 loading="lazy"
                             />
@@ -99,7 +99,7 @@ function UtahPage() {
                             <div className="project-image">
                                 <img
                                     className="work-item-detail-image"
-                                    src={utahWork.image2}
+                                    src={utahWork.gif}
                                     alt={`${utahWork.title} details`}
                                     loading="lazy"
                                 />

@@ -25,7 +25,7 @@ function CryptoPalPage() {
         setIsVisible(false);
         setTimeout(() => {
             navigate('/projects')
-        }, 300); 
+        }, 300);
     };
     return (
         <main className={`project-page-container ${isVisible ? 'fade-in' : 'fade-out'}`}>
@@ -37,7 +37,7 @@ function CryptoPalPage() {
                             <div className='work-item-content'>
                                 <img
                                     className="work-item-gif-details-page"
-                                    src={CryptoPalWork.gif}
+                                    src={CryptoPalWork.image}
                                     alt={CryptoPalWork.title}
                                     loading="lazy"
                                 />
@@ -93,7 +93,7 @@ function CryptoPalPage() {
                             <div className="project-image">
                                 <img
                                     className="work-item-detail-image"
-                                    src={CryptoPalWork.image}
+                                    src={CryptoPalWork.gif}
                                     alt={`${CryptoPalWork.title} details`}
                                     loading="lazy"
                                 />
@@ -120,8 +120,8 @@ function CryptoPalPage() {
                             View Repo
                         </a>
                     </div>
-                    <Link 
-                        to="/projects" 
+                    <Link
+                        to="/projects"
                         className="return-to-projects-button"
                         onClick={handleReturn}
                     >
