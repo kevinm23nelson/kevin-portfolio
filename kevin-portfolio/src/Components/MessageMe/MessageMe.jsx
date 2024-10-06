@@ -56,9 +56,9 @@ const MessageMe = () => {
                         <h3 className='text-navy'>
                             contact <span className='text-dark'>me</span>
                         </h3>
-                        {/* <p className='text' ref={messageRef}>
+                        <p className='text' ref={messageRef}>
                             Get in touch with me!
-                        </p> */}
+                        </p>
                     </div>
                 </div>
 
