@@ -1,4 +1,16 @@
-/* Base styles for the work section */
+.work {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.work.fade-in {
+    opacity: 1;
+}
+
+.work.fade-out {
+    opacity: 0;
+}
+
 .work-list {
     row-gap: 3rem;
     display: grid;
@@ -22,13 +34,32 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
+    padding-top: 75%;
 }
 
+.work-content {
+    padding-bottom: 5rem;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.custom-tooltip {
+    position: fixed;
+    z-index: 1000;
+}
 .work-item-gif {
     max-width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -62,6 +93,7 @@
     white-space: nowrap;
     transition: opacity 0.15s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translate(10px, -50%);
 }
 
 /* Responsive grid layouts */
@@ -77,35 +109,4 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
     }
-}
-
-/* Container adjustments */
-.work-content {
-    padding-bottom: 5rem;
-    margin: 0 auto;
-    max-width: 1400px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-/* Optional: Add aspect ratio container for consistent image sizes */
-.work-item-content {
-    position: relative;
-    width: 100%;
-    padding-top: 75%; /* 4:3 aspect ratio - adjust as needed */
-}
-
-.work-item-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Ensure the tooltip doesn't interfere with layout */
-.custom-tooltip {
-    position: fixed;
-    z-index: 1000;
 }

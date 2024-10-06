@@ -8,27 +8,37 @@ function Works() {
     const location = useLocation();
     const navigate = useNavigate();
     const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 });
+    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
+        setIsVisible(true);
+
         if (location.pathname === '/projects' && worksRef.current) {
             worksRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     }, [location.pathname]);
 
     const handleCardClick = (work) => {
-        if (work.title === "Utah ABA Locator") {
-            navigate('/utah');
-        } else {
-            navigate(work.link);
-        }
+        setIsVisible(false); 
+        setTimeout(() => {
+            if (work.title === "Utah ABA Locator") {
+                navigate('/utah');
+            } else if (work.title === "TaskPro") {
+                navigate('/taskpro');
+            } else if (work.title === "CryptoPal") {
+                navigate('/cryptopal');
+            } else {
+                navigate(work.link);
+            }
+        }, 400); 
     };
 
     const handleMouseMove = (e, title) => {
         setTooltip({
             show: true,
             text: `View Details for ${title}`,
-            x: e.clientX + 15,
-            y: e.clientY + 15,
+            x: e.clientX,
+            y: e.clientY,
         });
     };
 
@@ -37,7 +47,7 @@ function Works() {
     };
 
     return (
-        <div className='work bg-grey section-p' id="work">
+        <div className={`work section-p ${isVisible ? 'fade-in' : 'fade-out'}`} id="work">
             <div className='container'>
                 <div className='work-content'>
                     <div className='section-title'>
@@ -74,14 +84,14 @@ function Works() {
             </div>
             {tooltip.show && (
                 <div
-                    className="custom-tooltip"
-                    style={{
-                        left: `${tooltip.x}px`,
-                        top: `${tooltip.y}px`,
-                    }}
-                >
-                    {tooltip.text}
-                </div>
+                className="custom-tooltip"
+                style={{
+                    left: `${tooltip.x}px`,
+                    top: `${tooltip.y}px`,
+                }}
+            >
+                {tooltip.text}
+            </div>
             )}
         </div>
     );

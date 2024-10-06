@@ -7,21 +7,22 @@ import AboutMe from './Components/AboutMe/AboutMe';
 import MessageMe from './Components/MessageMe/MessageMe';
 import Footer from './Components/Footer/Footer';
 import UtahPage from './Components/UtahPage/UtahPage';
+import TaskProPage from './Components/TaskProPage/TaskProPage';
+import CryptoPalPage from './Components/CryptoPalPage/CryptoPalPage';
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* Define routes for different pages */}
       <Routes>
-        {/* Home page (default route) */}
         <Route path="/message-me" element={<MessageMe />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/projects" element={<Works />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/utah" element={<UtahPage />} />
-        {/* Add other routes as needed */}
+        <Route path="/taskpro" element={<TaskProPage />} />
+        <Route path="/cryptopal" element={<CryptoPalPage />} />
       </Routes>
       <Footer />
     </div>

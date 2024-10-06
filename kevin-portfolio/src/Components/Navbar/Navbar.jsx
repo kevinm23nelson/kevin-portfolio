@@ -1,37 +1,23 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
-  const location = useLocation();
+ 
   
   const collapseNavbar = () => setToggleNav(false);
 
-  const getPageTitle = () => {
-    // switch (location.pathname) {
-    //   case '/':
-    //     return '';
-    //   case '/projects':
-    //     return 'Projects';
-    //   case '/about-me':
-    //     return 'About';
-    //   case '/message-me':
-    //     return 'Contact';
-    //   default:
-    //     return 'Kevin Portolio';
-    // }
-  };
+ 
 
   return (
     <div className="navbar">
       <div className="container">
         <div className="navbar-content">
           <div className="work-and-toggler flex flex-sb">
-            <Link to="/" className="navbar-work text-uppercase fw-8 text-white ls-2 fs-28">
-              {getPageTitle()}
-            </Link>
+            <div className="navbar-work text-uppercase fw-8 text-white ls-2 fs-28">
+            </div>
             <button
               type="button"
               className="navbar-open-btn text-white"
