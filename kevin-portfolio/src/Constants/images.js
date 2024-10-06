@@ -20,7 +20,7 @@ import rails from "../Assets/Images/rails.png"
 import node from "../Assets/Images/node.png"
 import express from "../Assets/Images/express.png"
 import postgresql_logo from "../Assets/Images/postgresql_logo.png"
-
+import redux from "../Assets/Images/redux.png"
 
 
 const images = {
@@ -45,6 +45,7 @@ const images = {
     rails,
     node,
     express,
-    postgresql_logo
+    postgresql_logo,
+    redux
 }
 export default images;
