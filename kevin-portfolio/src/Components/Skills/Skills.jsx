@@ -48,6 +48,10 @@ const Skills = () => {
                     <img className="skills-icon" src={images.reactlogo} alt="React" />
                     <span className="tooltip-text">React</span>
                   </div>
+                  <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.redux} alt="Redux" />
+                    <span className="tooltip-text">Redux</span>
+                  </div>
                 </div>
               </div>
             </div>
