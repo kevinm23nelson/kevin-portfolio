@@ -45,6 +45,14 @@ const Skills = () => {
                     <span className="tooltip-text">CSS3</span>
                   </div>
                   <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.tailwindIcon} alt="Tailwind CSS" />
+                    <span className="tooltip-text">Tailwind CSS</span>
+                  </div>
+                  <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.nextIcon} alt="Next.js" />
+                    <span className="tooltip-text">Next.js</span>
+                  </div>
+                  <div className="icon-tooltip">
                     <img className="skills-icon" src={images.reactlogo} alt="React" />
                     <span className="tooltip-text">React</span>
                   </div>
@@ -75,15 +83,55 @@ const Skills = () => {
                   </div>
 
                   <div className="icon-tooltip">
-                    <img className="skills-icon" src={images.node} alt="" />
+                    <img className="skills-icon" src={images.mongodbIcon} alt="MongoDB" />
+                    <span className="tooltip-text">MongoDB</span>
+                  </div>
+
+                  <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.node} alt="Node.js" />
                     <span className="tooltip-text">Node.js</span>
                   </div>
 
                   <div className="icon-tooltip">
-                    <img className="skills-icon" src={images.express} alt="" />
-                    <span className="tooltip-text">Express.js</span>
+                    <img className="skills-icon" src={images.express} alt="Express" />
+                    <span className="tooltip-text">Express</span>
                   </div>
 
+                  <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.apolloIcon} alt="Apollo Server" />
+                    <span className="tooltip-text">Apollo Server</span>
+                  </div>
+
+                  <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.graphqlIcon} alt="GraphQL" />
+                    <span className="tooltip-text">GraphQL</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-info">
+                <h2 className="skills-color">Currently Learning</h2>
+                <div className="language-icons-sections">
+
+                <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.cIcon} alt="C#" />
+                    <span className="tooltip-text">C#</span>
+                  </div>
+                  {/* <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.salesforce} alt="Salesforce Developer" />
+                    <span className="tooltip-text">Saleforce Developer</span>
+                  </div>
+                  <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.salesforce_apex} alt="Salesforce Apex" />
+                    <span className="tooltip-text">Saleforce Apex</span>
+                  </div>
+                  <div className="icon-tooltip">
+                    <img className="skills-icon" src={images.salesforce_lightning} alt="Salesforce Lightning Components" />
+                    <span className="tooltip-text">Saleforce Lightning Components</span>
+                  </div> */}
+                  
                 </div>
               </div>
             </div>
