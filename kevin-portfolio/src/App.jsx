@@ -9,6 +9,8 @@ import Footer from './Components/Footer/Footer';
 import UtahPage from './Components/UtahPage/UtahPage';
 import TaskProPage from './Components/TaskProPage/TaskProPage';
 import CryptoPalPage from './Components/CryptoPalPage/CryptoPalPage';
+import TerraHostingPage from './Components/TerraPage/TerraPage';
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         <Route path="/utah" element={<UtahPage />} />
         <Route path="/taskpro" element={<TaskProPage />} />
         <Route path="/cryptopal" element={<CryptoPalPage />} />
+        <Route path="/terra" element={<TerraHostingPage />} />
       </Routes>
       <Footer />
     </div>

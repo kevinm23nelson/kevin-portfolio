@@ -35,6 +35,14 @@ const services = [
 
 const works = [
     {
+        title: "Terra Client Portal",
+        link: "https://utahabalocator.com/",
+        repo: "https://github.com/utah-aba-finder/utah-aba-finder-fe",
+        image: `${images.TerraHostingPic}`,
+        image2: `${images.TerraHostingDetails}`,
+        gif: `${images.TerraHostingGif}`
+    },
+    {
         title: "Utah ABA Locator",
         link: "https://utahabalocator.com/",
         repo: "https://github.com/utah-aba-finder/utah-aba-finder-fe",

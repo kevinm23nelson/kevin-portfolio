@@ -21,6 +21,18 @@ import node from "../Assets/Images/node.png"
 import express from "../Assets/Images/express.png"
 import postgresql_logo from "../Assets/Images/postgresql_logo.png"
 import redux from "../Assets/Images/redux.png"
+import salesforce from "../Assets/Images/salesforce.png"
+import salesforce_lightning from "../Assets/Images/salesforce_lightning.png"
+import salesforce_apex from "../Assets/Images/salesforce_apex.png"
+import apolloIcon from "../Assets/Images/apolloIcon.jpg"
+import graphqlIcon from "../Assets/Images/graphqlIcon.jpg"
+import nextIcon from "../Assets/Images/nextIcon.jpg"
+import mongodbIcon from "../Assets/Images/mongodbIcon.png"
+import tailwindIcon from "../Assets/Images/tailwindIcon.png"
+import cIcon from "../Assets/Images/cIcon.png"
+import TerraHostingPic from "../Assets/Images/TerraHostingPic.png"
+import TerraHostingGif from "../Assets/Images/TerraHostingGif.gif"
+import TerraHostingDetails from "../Assets/Images/TerraHostingDetails.png"
 
 
 const images = {
@@ -46,6 +58,18 @@ const images = {
     node,
     express,
     postgresql_logo,
-    redux
+    redux,
+    salesforce,
+    salesforce_lightning,
+    salesforce_apex,
+    apolloIcon,
+    graphqlIcon,
+    nextIcon,
+    mongodbIcon,
+    tailwindIcon,
+    cIcon,
+    TerraHostingPic,
+    TerraHostingGif,
+    TerraHostingDetails
 }
 export default images;

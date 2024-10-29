@@ -21,7 +21,9 @@ function Works() {
     const handleCardClick = (work) => {
         setIsVisible(false); 
         setTimeout(() => {
-            if (work.title === "Utah ABA Locator") {
+            if (work.title === "Terra Client Portal") {
+                navigate('/terra');
+            } else if (work.title === "Utah ABA Locator") {
                 navigate('/utah');
             } else if (work.title === "TaskPro") {
                 navigate('/taskpro');
